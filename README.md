@@ -1,6 +1,8 @@
 # func-to-async
 
-__Build Status__
+[![Build Status](https://travis-ci.org/lestoni/func-to-async.svg)](https://travis-ci.org/lestoni/func-to-async)
+
+[![NPM](https://nodei.co/npm/func-to-async.png?downloads=true&stars=true)](https://nodei.co/npm/func-to-async/)
 
 Utility to convert a sync function to async.
 
