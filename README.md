@@ -17,24 +17,13 @@ Utility to convert a sync function to async.
 ```javascript
   var toAsync = require('func-to-async');
 
-  function add(a, b) {
-    if(typeof a !== 'number' || typeof b !== 'number'){
-      throw new TypeError('Expecte arguments to be numbers');
-    }
+  var asyncFunc = toAsync(syncFunc);
 
-    return a + b;
-  }
-
-  var asyncFunc = toAsync(add);
-
-  asyncFunc(5, 6, function cb(err, result) {
+  asyncFunc(function(err) {
     if(err) {
       return console.error(err);
     }
-
-    console.log(result);
   });
-
 ```
 
 view tests for more examples.
